@@ -1,6 +1,6 @@
 {
   "name": "nanoblog",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A microscopic markdown blogging tool",
   "main": "index.js",
   "author": "Kelvin Fichter",

@@ -23,7 +23,7 @@ const template = (title, published, content) => {
   <body>
     <div class="nav"><a href="/">Home</a></div>
     <h1>${title}</h1>
-    <div><i>${published}</i></div>
+    ${published ? `<div><i>${published}</i></div>` : ''}
     <div>
 ${content.replace(/\n$/, '')}
     </div>
