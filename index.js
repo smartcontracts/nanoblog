@@ -23,10 +23,8 @@ const template = (title, published, content) => {
   <body>
     <div class="nav"><a href="/">Home</a></div>
     <h1>${title}</h1>
-    ${published ? `<div><i>${published}</i></div>` : ''}
-    <div>
-${content.replace(/\n$/, '')}
-    </div>
+    ${published ? `<div><i>Published ${new Date(published).toISOString().split('T')[0]}</i></div>` : ''}
+    <div>${content.replace(/\n$/, '')}</div>
   </body>
 </html>`
 }
